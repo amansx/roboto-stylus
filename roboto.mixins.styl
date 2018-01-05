@@ -1,0 +1,41 @@
+$RobotoFontPath ?= '../fonts/';
+
+Roboto($directory = 'roboto', $variant = 'Roboto', $type = 'Regular', $weight = 400, $style = normal) {
+
+	$fontFullPath = pathjoin($RobotoFontPath, $directory , $variant);
+	fontWExt($ext, $v = ''){
+		return join('',  $fontFullPath, '-', $type, '.', $ext, $v)
+	}
+
+	$local      = join(' ', $variant, $type)
+	$localWType = join('',  $variant, '-', $type)
+
+	fontFace(withType = false){
+		@font-face {
+			font-family : withType ? $variant : join('-', $variant, $type);
+			src         : url(fontWExt('eot'));
+			src         : local($local),
+						  local($localWType),
+						  url(fontWExt('eot?#iefix')) format('embedded-opentype'),
+						  url(fontWExt('woff2')) format('woff2'),
+						  url(fontWExt('woff')) format('woff'),
+						  url(fontWExt('ttf')) format('truetype'),
+						  url(fontWExt('svg#', $variant)) format('svg');						  
+			if withType {
+				font-weight : $weight;
+				font-style  : $style;
+			}
+		}
+	}
+	
+	fontFace()
+	fontFace(true)
+}
+
+RobotoCondensed($type = 'Regular', $weight = 400, $style = normal){
+	Roboto('roboto-condensed', 'Roboto-Condensed', $type, $weight, $style)
+}
+
+RobotoSlab($type = 'Regular', $weight = 400, $style = normal){
+	Roboto('roboto-slab', 'Roboto-Slab', $type, $weight, $style)
+}
