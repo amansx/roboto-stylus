@@ -1,5 +1,6 @@
-# roboto-stylus
-
+# Roboto Fontface Stylus Binding
+## Roboto is a neo-grotesque sans-serif typeface family developed by Google
+[Roboto @Google Fonts](https://fonts.google.com/specimen/Roboto)
 
 ``` stylus
 $RobotoFontPath = '../../fonts/';
@@ -14,18 +15,24 @@ $RobotoFontPath = '../../fonts/';
 
 ```
 
-### Import Individual FontFace
+### Import Individual Font-Faces
 
 ``` stylus
+// Set your Font Path
+$RobotoFontPath = '../../fonts/';
 
+// Import the Mixin
+@import('roboto-stylus/roboto-mixins')
+
+// Look at roboto.styl for more variants
 Roboto($type: 'Thin',       $weight: 100, $style: normal);
 Roboto($type: 'ThinItalic', $weight: 100, $style: italic);
 
+// Look at roboto-slab.styl for more variants
 RobotoSlab($type: 'Light',       $weight: 300, $style: normal);
 RobotoSlab($type: 'LightItalic', $weight: 300, $style: italic);
 
 ```
-
 
 ### Mixin Signature
 
