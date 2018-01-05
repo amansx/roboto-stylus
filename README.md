@@ -22,7 +22,7 @@ $RobotoFontPath = '../../fonts/';
 $RobotoFontPath = '../../fonts/';
 
 // Import the Mixin
-@import('roboto-stylus/roboto-mixins')
+@import('roboto-stylus/roboto.mixins')
 
 // Look at roboto.styl for more variants
 Roboto($type: 'Thin',       $weight: 100, $style: normal);

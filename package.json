@@ -1,6 +1,6 @@
 {
   "name": "roboto-stylus",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Roboto Typeface for Stylus",
   "main": "index.js",
   "scripts": {
