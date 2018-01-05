@@ -1,7 +1,7 @@
 # roboto-stylus
 
 
-``` stylus-lang
+``` stylus
 $RobotoFontPath = '../../fonts/';
 
 // Import All Typefaces
@@ -16,7 +16,7 @@ $RobotoFontPath = '../../fonts/';
 
 ### Import Individual FontFace
 
-``` stylus-lang
+``` stylus
 
 Roboto($type: 'Thin',       $weight: 100, $style: normal);
 Roboto($type: 'ThinItalic', $weight: 100, $style: italic);
@@ -29,7 +29,7 @@ RobotoSlab($type: 'LightItalic', $weight: 300, $style: italic);
 
 ### Mixin Signature
 
-``` stylus-lang
+``` stylus
 
 Roboto(
     $directory = 'roboto', 
