@@ -1,5 +1,5 @@
-# Roboto Fontface Stylus Binding
-## Roboto is a neo-grotesque sans-serif typeface family developed by Google
+# Roboto Typeface Stylus Binding
+### Roboto is a neo-grotesque sans-serif typeface family developed by Google
 [Roboto @Google Fonts](https://fonts.google.com/specimen/Roboto)
 
 ``` stylus
